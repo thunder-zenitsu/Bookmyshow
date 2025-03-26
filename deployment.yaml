@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: bookms-container
-        image: spidey21/BookmyShow:latest
+        image: spidey21/bookms:latest
         ports:
         - containerPort: 8080
