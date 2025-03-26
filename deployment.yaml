@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bookms-app
+  labels:
+    app: bookms
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bookms
+  template:
+    metadata:
+      labels:
+        app: bookms
+    spec:
+      containers:
+      - name: bookms-container
+        image: spidey21/BookmyShow:latest
+        ports:
+        - containerPort: 8080
