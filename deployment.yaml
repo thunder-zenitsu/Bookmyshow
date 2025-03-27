@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: bookms-container
-        image: spidey21/bookms:latest
+        image: spidey21/bookproject:latest
         ports:
         - containerPort: 3000
